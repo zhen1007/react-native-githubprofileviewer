@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@octokit/graphql": "^8.1.1",
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/stack": "^6.3.29",
     "axios": "^1.7.2",

@@ -2,9 +2,9 @@
 import React, {useEffect} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import RegisterScreen from './src/screens/RegisterScreen';
-import LoginScreen from './src/screens/LoginScreen';
-import GitHubLinkScreen from './src/screens/GitHubLinkScreen';
+import HomeScreen from './src/screens/HomeScreen';
+// import LoginScreen from './src/screens/LoginScreen';
+// import GitHubLinkScreen from './src/screens/GitHubLinkScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
 
 const Stack = createStackNavigator();
@@ -14,11 +14,11 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Register"
-          component={RegisterScreen}
-          options={{title: 'Register'}}
+          name="Home"
+          component={HomeScreen}
+          options={{title: 'Home'}}
         />
-        <Stack.Screen
+        {/* <Stack.Screen
           name="Login"
           component={LoginScreen}
           options={{title: 'Login'}}
@@ -27,7 +27,7 @@ const App = () => {
           name="GitHubLink"
           component={GitHubLinkScreen}
           options={{title: 'Link GitHub Account'}}
-        />
+        /> */}
         <Stack.Screen
           name="Profile"
           component={ProfileScreen}
